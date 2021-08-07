@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "timelines",
+  "info": {
+    "name": "timelines"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "time": {
+      "type": "json"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "goal": {
+      "type": "string"
+    },
+    "usage": {
+      "type": "biginteger"
+    },
+    "categories": {
+      "via": "timelines",
+      "collection": "categories"
+    }
+  }
+}

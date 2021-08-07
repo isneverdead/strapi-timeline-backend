@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "Categories",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "timelines": {
+      "collection": "timelines",
+      "via": "categories",
+      "dominant": true
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
